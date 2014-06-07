@@ -6,5 +6,5 @@ data<-subset(alldata,DateTime>=strptime("2007-02-01 00:00:00", "%Y-%m-%d %H:%M:%
 library(datasets)
 
 png(filename = "plot2.png",width = 480, height = 480, units = "px")
-plot(data$DateTime,data$Global_active_power,type="l",ylab="Global Active Power",xlab="")
+plot(data$DateTime,data$Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="")
 dev.off()
